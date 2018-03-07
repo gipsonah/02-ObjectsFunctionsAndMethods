@@ -3,12 +3,12 @@ Practice DEFINING and CALLING
      FUNCTIONS
 
 Authors: David Mutchler, Dave Fisher, Valerie Galluzzi, Amanda Stouder,
-         their colleagues and PUT_YOUR_NAME_HERE.
-"""  # TODO: 1. PUT YOUR NAME IN THE ABOVE LINE.
+         their colleagues and Alex Gipson.
+"""  # DONE: 1. PUT YOUR NAME IN THE ABOVE LINE.
 
 ###############################################################################
 #
-# TODO: 2.
+# DONE: 2.
 #   Allow this module to use the  rosegraphics.py  module by marking the
 #     src
 #   folder in this project as a "Sources Root", as follows:
@@ -31,10 +31,13 @@ def main():
     # A TurtleWindow works "behind the scenes" to enable Turtle movement
     window = rg.TurtleWindow()
 
+    turtle5()
+    turtle4()
     turtle1()
     turtle3()
     turtle2()
     turtle2()
+
 
     window.close_on_mouse_click()
 
@@ -70,8 +73,8 @@ def turtle2():
     # Keep track of where I am, to go back to it at the end.
     # Then choose a RANDOM starting point for the motion in here.
     i_began_here = rg.Point(grace.x_cor(), grace.y_cor())
-    i_am_going_here = rg.Point(random.randrange(-500, 500),
-                               random.randrange(-300, 0))
+    i_am_going_here = rg.Point(random.randint(-500, 500),
+                               random.randint(-300, 0))
     grace.pen_up()
     grace.go_to(i_am_going_here)
     grace.pen_down()
@@ -104,9 +107,47 @@ def turtle3():
     maja.end_fill()
 
 
+def turtle4():
+
+    ashlyn = rg.SimpleTurtle('turtle')
+    ashlyn.speed = 10
+    ashlyn.pen = rg.Pen('purple', 20)
+    ashlyn.paint_bucket = rg.PaintBucket('pink')
+
+    ashlyn.backward(150)
+    ashlyn.right(45)
+    ashlyn.forward(150)
+
+    ashlyn.begin_fill()
+    ashlyn.draw_regular_polygon(8, 20)
+    ashlyn.end_fill()
+
+def turtle5():
+    gavin = rg.SimpleTurtle('turtle')
+    gavin.speed = 10
+    gavin.pen = rg.Pen('black', 10)
+    gavin.paint_bucket = rg.PaintBucket('gold')
+
+    gavin.right(90)
+    gavin.forward(100)
+    gavin.left(90)
+    gavin.forward(100)
+
+    gavin.begin_fill()
+    gavin.draw_square(200)
+    gavin.end_fill()
+
+    val = rg.SimpleTurtle('triangle')
+    val.speed = 20
+    val.pen = rg.Pen('red', 5)
+    val.paint_bucket = rg.PaintBucket ('black')
+
+    val.begin_fill()
+    val.draw_circle(200)
+    val.end_fill()
 ###############################################################################
 #
-# TODO: 3.
+# DONE: 3.
 #   READ the code above.  Be sure you understand:
 #     -- How many functions are defined above?
 #           (Answer: 4)
@@ -138,7 +179,7 @@ def turtle3():
 
 ###############################################################################
 #
-# TODO: 4.
+# DONE: 4.
 #   Define another function,
 #   immediately below the end of the definition of   turtle3   above.
 #   Name your new function   turtle4.
@@ -168,7 +209,7 @@ def turtle3():
 
 ###############################################################################
 #
-# TODO: 5.
+# DONE: 5.
 #   Add a line to   main   that CALLS your new function immediately
 #   AFTER  main  calls turtle1.  So:
 #     -- the SimpleTurtle from turtle1 should move,
@@ -184,7 +225,7 @@ def turtle3():
 
 ###############################################################################
 #
-# TODO: 6.
+# DONE: 6.
 #   The previous two TODOs IMPLEMENTED a function (TO-DO 4)
 #   and TESTED that function (TO-DO 5).
 #
@@ -211,7 +252,7 @@ def turtle3():
 
 ###############################################################################
 #
-# TODO: 7.
+# DONE: 7.
 #   COMMIT-and-PUSH your work (after changing this TO-DO to DONE).
 #
 #   As a reminder, here is how you should do so:
