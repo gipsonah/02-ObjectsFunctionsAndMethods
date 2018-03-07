@@ -129,7 +129,7 @@ def turtle5():
     gavin.paint_bucket = rg.PaintBucket('gold')
 
     gavin.right(90)
-    gavin.forward(100)
+    gavin.forward(300)
     gavin.left(90)
     gavin.forward(100)
 
