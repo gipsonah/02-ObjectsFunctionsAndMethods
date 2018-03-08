@@ -7,7 +7,7 @@ This module uses ROSEGRAPHICS to demonstrate:
 Authors: David Mutchler, Dave Fisher, Valerie Galluzzi, Amanda Stouder,
          their colleagues and Alex Gipson.
 """  # DONE: 1. PUT YOUR NAME IN THE ABOVE LINE.
-import rosegraphics as rg
+
 
 ########################################################################
 #
